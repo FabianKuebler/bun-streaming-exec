@@ -2,6 +2,8 @@
 
 [![npm](https://img.shields.io/npm/v/bun-streaming-exec)](https://www.npmjs.com/package/bun-streaming-exec)
 
+> **Note:** This codebase was created using [Claude Code](https://claude.ai/code).
+
 Streaming TypeScript/JavaScript executor for LLM-generated code.
 
 Execute code statements as they stream from an LLM, without waiting for the complete code block. Statements run immediately when detected, enabling:
@@ -127,10 +129,6 @@ Not available (provide via `context`): `fetch`, `Buffer`, `process`, `require`, 
 - **No security sandbox** - Do not execute untrusted code. The `vm` module is not a security mechanism.
 - **Bun-only** - Uses `Bun.Transpiler` for TypeScript/JSX.
 - **Timeout limitation** - The timeout only applies to async operations. Synchronous infinite loops (`while(true){}`) cannot be interrupted and will hang the process.
-
-## Acknowledgments
-
-This project was written with [Claude Code](https://claude.ai/code).
 
 ## License
 
